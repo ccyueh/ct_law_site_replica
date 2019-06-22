@@ -28,14 +28,17 @@ main {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin: 25px auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: lightgray;
 }
 
 .nav-button {
   display: inline-block;
   width: 19%;
-  font-size: 10px;
-  padding-top: 5px;
+  font-size: 13px;
+  padding-top: 3px;
+  padding-bottom: 2px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -47,23 +50,6 @@ a {
 a:hover {
   color: brown;
   text-decoration: none;
-}
-
-.btn-group {
-  margin-top: 15px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.btn-group>p {
-  margin-top: 2px;
-  color: lightgray;
-  margin-bottom: -3px;
-}
-
-.btn-link {
-  text-transform: uppercase;
-  max-width: 20%;
 }
 
 .red-column {
