@@ -120,6 +120,10 @@ hr {
   opacity: 0.7;
 }
 
+[class*="column"] img {
+  margin-bottom: 5px;
+}
+
 .second-row {
   margin-top: 25px;
   margin-bottom: 35px;
