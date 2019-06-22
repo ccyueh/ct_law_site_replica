@@ -1,0 +1,144 @@
+body {
+  background-image: url(https://connor-sm.github.io/lzb_law_html/images/nza_background.jpg);
+  overflow-x: hidden;
+}
+
+header img {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+main {
+  font-size: 13px;
+}
+
+.col-md-10 {
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 0 15px dimgray;
+  margin-bottom: 50px;
+}
+
+.navbar-links {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 25px auto;
+  color: lightgray;
+}
+
+.nav-button {
+  display: inline-block;
+  width: 19%;
+  font-size: 10px;
+  padding-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+  text-decoration: none;
+}
+
+.btn-group {
+  margin-top: 15px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.btn-group>p {
+  margin-top: 2px;
+  color: lightgray;
+  margin-bottom: -3px;
+}
+
+.btn-link {
+  text-transform: uppercase;
+  max-width: 20%;
+}
+
+.red-column {
+  background-color: brown;
+  opacity: 1;
+  color: white;
+  padding: 10px 10px 1px 10px;
+}
+
+.red-column>hr {
+  border: none;
+  height: 1px;
+  color: white;
+  background-color: white;
+  margin: 0px 0px 10px 0px;
+}
+
+.red-column a {
+  color: white;
+}
+
+.red-column a:hover {
+  text-decoration: none;
+}
+
+.red-column>p>a:hover {
+  font-weight: bold;
+}
+
+#newsfeed {
+  overflow-y: scroll;
+  height: 360px;
+}
+
+.gray-column {
+  background-color: #d7cec5;
+  padding: 10px;
+  margin-bottom: 300px;
+}
+
+.gray-column>a:hover {
+  opacity: 0.7;
+}
+
+.second-row {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+#contact-info {
+  color: maroon;
+}
+
+.email-link {
+  text-decoration: underline;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+footer>div {
+  border-top: 1px solid black;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: silver;
+  font-size: 65%;
+}
+
+footer>div>a {
+  text-transform: uppercase;
+}
+
+#gray-links a {
+  color: silver;
+}
