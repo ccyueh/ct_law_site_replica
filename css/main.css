@@ -14,6 +14,8 @@ header a:hover {
 
 main {
   font-size: 13px;
+  margin-bottom: 50px;
+  line-height: 1.25em;
 }
 
 .col-md-10 {
@@ -113,7 +115,7 @@ hr {
 .gray-column {
   background-color: #d7cec5;
   padding: 10px;
-  margin-bottom: 300px;
+  margin-bottom: 250px;
 }
 
 .gray-column>a:hover {
@@ -124,9 +126,8 @@ hr {
   margin-bottom: 5px;
 }
 
-.second-row {
+.add-top-margin {
   margin-top: 25px;
-  margin-bottom: 35px;
 }
 
 #contact-info {
