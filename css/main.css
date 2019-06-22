@@ -98,6 +98,10 @@ a:hover {
   margin: 10px 0;
 }
 
+.col-md-9>.row li {
+  margin: -5px;
+}
+
 ul, li {
   list-style: none;
 }
@@ -110,9 +114,14 @@ ul {
 li {
   padding-left: 10px;
 }
+
 #newsfeed {
   overflow-y: scroll;
   height: 360px;
+}
+
+hr {
+  margin: -10px 0px 10px 0px;
 }
 
 .gray-column {
