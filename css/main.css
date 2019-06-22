@@ -87,12 +87,29 @@ a:hover {
 
 .red-column a:hover {
   text-decoration: none;
-}
-
-.red-column>p>a:hover {
   font-weight: bold;
 }
 
+.red-column>a:hover {
+  font-weight: normal;
+}
+
+.col-md-9>.row>.col-md-6 {
+  margin: 10px 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0px;
+  margin-left: -5px;
+}
+
+li {
+  padding-left: 10px;
+}
 #newsfeed {
   overflow-y: scroll;
   height: 360px;
