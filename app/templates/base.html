@@ -1,0 +1,61 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+  Law Replica
+{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/css/main.css">
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <div class="col-md-10 offset-md-1">
+      <div class="container">
+        <header>
+          <a href={{ url_for('index') }}>
+            <img src="http://www.placehold.it/318x76" alt="Image">
+          </a>
+
+          <div class="row navbar-links">
+            <div class="nav-button"><a href={{ url_for('who') }}>who we are</a></div>|
+            <div class="nav-button"><a href={{ url_for('what') }}>what we do</a></div>|
+            <div class="nav-button"><a href="#">news & events</a></div>|
+            <div class="nav-button"><a href={{ url_for('where') }}>where we work</a></div>|
+            <div class="nav-button"><a href={{ url_for('contact') }} >contact us</a></div>
+
+          </div> <!--end of row-->
+        </header>
+
+        <main>
+          {% block app_content %}{% endblock %}
+        </main>
+
+        <footer>
+          <div>
+            <a href="#">who we are</a> &nbsp;&nbsp;&#8212;&nbsp;&nbsp;
+            <a href="#">what we do</a> &nbsp;&nbsp;&#8212;&nbsp;&nbsp;
+            <a href="#">news & events</a> &nbsp;&nbsp;&#8212;&nbsp;&nbsp;
+            <a href="#">where we work</a> &nbsp;&nbsp;&#8212;&nbsp;&nbsp;
+            <a href="#">contact us</a>
+            <p></p>
+            <p id="gray-links">
+              <a href="#">©2009 Yueh & Klein, P.C.</a>
+              &nbsp;&nbsp;//&nbsp;&nbsp;
+              <a href="#">Website Design by Yueh & Klein</a>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

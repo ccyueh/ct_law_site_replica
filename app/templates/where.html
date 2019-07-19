@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<div class="row">
+  <div class="col-md-3">
+    <div class="red-column">
+      <span class="font-weight-bold">WHERE WE WORK</span>
+      <hr>
+
+      <p><a href="#">United States</a></p>
+
+      <p><a href="#">International</a></p>
+
+      <a href={{ url_for('where') }}>
+        <img src="https://connor-sm.github.io/lzb_law_html/images/content-navlink-career.jpg" alt="Image" class="img-fluid">
+        <div class="small font-weight-bold">Career Opportunities</div>
+        <p class="small">
+          Join our magnificent firm.
+        </p>
+      </a>
+
+    </div> <!-- end red-col -->
+  </div> <!-- end row -->
+
+  <div class="col-md-9">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="row add-top-margin">
+      <div class="col-md-8 add-top-margin">
+        <p class="font-weight-bold">UNITED STATES</p>
+        <hr>
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li>Alabama</li>
+              <li>Alaska</li>
+              <li>Arizona</li>
+              <li>Arkansas</li>
+              <li>California</li>
+              <li>Colorado</li>
+              <li>Connecticut</li>
+              <li>Florida</li>
+              <li>Georgia</li>
+              <li>Hawaii</li>
+              <li>Idaho</li>
+              <li>Illinois</li>
+              <li>Indiana</li>
+              <li>Iowa</li>
+              <li>Kansas</li>
+              <li>Kentucky</li>
+              <li>Louisiana</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>Maine</li>
+              <li>Maryland</li>
+              <li>Massachusetts</li>
+              <li>Michigan</li>
+              <li>Minnesota</li>
+              <li>Mississippi</li>
+              <li>Missouri</li>
+              <li>Montana</li>
+              <li>Nebraska</li>
+              <li>Nevada</li>
+              <li>New Hampshire</li>
+              <li>New Jersey</li>
+              <li>New Mexico</li>
+              <li>New York</li>
+              <li>North Carolina</li>
+              <li>North Dakota</li>
+              <li>Ohio</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>Oklahoma</li>
+              <li>Oregon</li>
+              <li>Pennsylvania</li>
+              <li>South Carolina</li>
+              <li>South Dakota</li>
+              <li>Tennessee</li>
+              <li>Texas</li>
+              <li>Utah</li>
+              <li>Vermont</li>
+              <li>Virginia</li>
+              <li>Washington</li>
+              <li>West Virginia</li>
+              <li>Wisconsin</li>
+              <li>Wyoming</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 add-top-margin">
+        <p class="font-weight-bold">INTERNATIONAL</p>
+        <hr>
+        <ul>
+          <li>Canada</li>
+          <li>Columbia</li>
+          <li>Germany</li>
+          <li>Nicaragua</li>
+        </ul>
+      </div>
+    </div> <!-- ends row -->
+
+  </div> <!-- end col 9 -->
+
+</div> <!-- end row -->
+{% endblock %}

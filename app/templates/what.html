@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<div class="row">
+  <div class="col-md-3">
+    <div class="red-column">
+      <span class="font-weight-bold">WHAT WE DO</span>
+      <hr>
+      <p></p>
+
+      <ul>
+        <li>
+          <ul><a href="#">Subrogation</a>
+            <li><a href="#">Property</a></li>
+            <li><a href="#">Worker's Rights</a></li>
+          </ul>
+        </li>
+        <li>
+          <p></p>
+          <ul><a href="#">Litigation</a>
+            <li><a href="#">Appellate</a></li>
+            <li><a href="#">Commerical</a></li>
+            <li><a href="#">Defense</a></li>
+            <li><a href="#">Labor/Employment</a></li>
+          </ul>
+        </li>
+        <li>
+          <p></p>
+          <ul><a href="#">Business</a>
+            <li><a href="#">Brokerage Agreement</a></li>
+            <li><a href="#">Business Formation</a></li>
+            <li><a href="#">Business Related Contracts</a></li>
+            <li><a href="#">Labor/Employment</a></li>
+          </ul>
+        </li>
+        <p></p>
+        <li>
+          <ul><a href="#">Transportation</a></ul>
+        </li>
+      </ul>
+
+      <a href={{ url_for('where') }}>
+        <img src="https://connor-sm.github.io/lzb_law_html/images/content-navlink-attorneys.jpg" alt="Image" class="img-fluid">
+        <div class="small font-weight-bold">Attorneys</div>
+        <p class="small">
+          Meet our prestigious partners and esteemed associates.
+        </p>
+      </a>
+
+    </div> <!-- end red-col -->
+  </div> <!-- end row -->
+
+  <div class="col-md-9">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi natus deserunt laborum voluptatem fuga fugiat nulla rerum! Rerum beatae, voluptas iusto magni quibusdam veritatis accusantium, nam consequuntur alias vitae asperiores!</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-02-subrogation.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-02-litigation.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+    </div> <!-- ends row -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-02-business.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-02-warehouse.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+    </div> <!-- ends row -->
+
+  </div> <!-- end col 9 -->
+
+</div> <!-- end row -->
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<div class="row">
+  <div class="col-md-3">
+    <div class="red-column">
+      <span class="font-weight-bold">WHO WE ARE</span>
+      <hr>
+
+      <p><a href="#">Welcome</a></p>
+
+      <p><a href="#">Attorneys</a></p>
+
+      <p><a href="#">Staff</a></p>
+
+      <p><a href="#">Reputation</a></p>
+
+      <p><a href="#">History</a></p>
+
+      <a href={{ url_for('where') }}>
+        <img src="https://connor-sm.github.io/lzb_law_html/images/content-navlink-where.jpg" alt="Image" class="img-fluid">
+        <div class="small font-weight-bold">Where We Work</div>
+        <p class="small">
+          Find out more about our work coverage area.
+        </p>
+      </a>
+
+    </div> <!-- end red-col -->
+  </div> <!-- end row -->
+
+  <div class="col-md-9">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi natus deserunt laborum voluptatem fuga fugiat nulla rerum! Rerum beatae, voluptas iusto magni quibusdam veritatis accusantium, nam consequuntur alias vitae asperiores!</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#">
+          <img src="http://placehold.it/300x118" alt="Image" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-01-attorneys.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+    </div> <!-- ends row -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-01-staff.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-01-reputation.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+    </div> <!-- ends row -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#">
+          <img src="https://connor-sm.github.io/lzb_law_html/images/sub-01-history.jpg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+    </div> <!-- ends row -->
+
+  </div> <!-- end col 9 -->
+
+</div> <!-- end row -->
+{% endblock %}
