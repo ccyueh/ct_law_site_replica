@@ -1,8 +1,9 @@
-from app import app, db
+from app import app, db, admin
 from flask import render_template, url_for, redirect, flash
 from app.forms import LoginForm, RegisterForm
 from app.models import User
 from flask_login import current_user, login_user, logout_user, login_required
+from flask_admin.contrib.sqla import ModelView
 
 @app.route('/')
 @app.route('/index')
@@ -75,3 +76,5 @@ def register():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
+admin.add_view(ModelView(User, db.session))
