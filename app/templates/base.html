@@ -1,7 +1,7 @@
 {% extends 'bootstrap/base.html' %}
 
 {% block title %}
-  Law Replica
+  Law Replica - {{ title }}
 {% endblock %}
 
 {% block styles %}
@@ -14,6 +14,15 @@
 {% endblock %}
 
 {% block content %}
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <script type="text/javascript">
+          alert(`{{ message }}`);
+        </script>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
 
 <div class="row">
   <div class="col-md-8 offset-md-2">
@@ -25,11 +34,18 @@
           </a>
 
           <div class="row navbar-links">
+
             <div class="nav-button"><a href={{ url_for('who') }}>who we are</a></div>|
             <div class="nav-button"><a href={{ url_for('what') }}>what we do</a></div>|
             <div class="nav-button"><a href="#">news & events</a></div>|
             <div class="nav-button"><a href={{ url_for('where') }}>where we work</a></div>|
-            <div class="nav-button"><a href={{ url_for('contact') }} >contact us</a></div>
+            <div class="nav-button"><a href={{ url_for('contact') }} >contact us</a></div>|
+            
+            {% if current_user.is_authenticated %}
+              <div class="nav-button"><a href={{ url_for('logout') }} >logout</a></div>    
+            {% else %}
+              <div class="nav-button"><a href={{ url_for('login') }} >login</a></div>
+            {% endif %} <!-- ends authentication statement -->
 
           </div> <!--end of row-->
         </header>

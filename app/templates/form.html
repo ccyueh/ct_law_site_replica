@@ -1,0 +1,25 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+{% extends 'base.html' %}
+
+{% block app_content %}
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <h4>{{ title }}</h4>
+    </div>
+  </div> <!-- ends row for title -->
+
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      {{ wtf.quick_form(form) }}
+        
+      {% if title == 'Login' %}
+        <div class="container">
+          <p>
+            New account? Register <a href={{ url_for('register') }}>here</a>
+          </p>
+        </div>
+      {% endif %}
+    </div>
+  </div> <!-- ends row -->
+
+{% endblock %}

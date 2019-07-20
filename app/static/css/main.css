@@ -37,8 +37,8 @@ main {
 
 .nav-button {
   display: inline-block;
-  width: 19%;
-  font-size: 13px;
+  width: 16%;
+  font-size: 12px;
   padding-top: 3px;
   padding-bottom: 2px;
   text-align: center;
@@ -140,6 +140,14 @@ hr {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+.form-check-label {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-top: 20px;
 }
 
 footer>div {
